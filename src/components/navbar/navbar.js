@@ -2,7 +2,7 @@ import React from 'react';
 //css
 import './navbar.css';
 //images
-import logo from '../../assets/logo.png'
+import logo from '../../assets/isaac-mitchell-high-resolution-logo-transparent.png'
 import contactImg from '../../assets/contact.png'
 //packages
 import { Link } from 'react-scroll'

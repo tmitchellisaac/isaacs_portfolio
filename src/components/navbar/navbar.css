@@ -14,13 +14,35 @@
 
 .logo{
   object-fit: cover;
-  height: 3rem;
-  width: 4rem;
+  height: 4rem;
+  width: 6rem;
 }
 
 .desktopMenuListItem{
   margin: 1rem;
   cursor: pointer;
+  border-bottom: 10px white;
+}
+.desktopMenuListItem:hover{
+  padding-bottom: 0.5rem;
+  color: var(--green);
+  border-bottom: 3px solid var(--green);
+}
+
+
+.desktopMenuBtn{
+  border: none;
+  background:white;
+  color:var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  cursor:pointer;
+}
+.desktopMenuBtn:hover{
+  background-color: var(--green);
 }
 
 .desktopMenuImg{
@@ -30,14 +52,3 @@
   margin: 1rem;
 }
 
-.desktopMenuBtn{
-  border: none;
-  background: white;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 1rem;
-  border-radius: 2rem;
-  cursor:pointer;
-}
