@@ -7,8 +7,16 @@
 }
 
 body {
-  background-color: rgb(30, 30, 30);
+  background-color: var(--background);
   color: white;
   overflow: hidden;
   overflow-y: scroll;
+}
+
+:root {
+  --green: #136f63;
+  --background: #202020;
+  --light-blue: #3f88c5;
+  --yellow: #f0c808;
+  --red: #dd1c1a;
 }
