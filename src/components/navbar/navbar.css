@@ -10,6 +10,9 @@
   position: sticky;
   top: 0;
   z-index: 3;
+  flex: 0 1 auto;
+  overflow: hidden;
+  background-color: var(--background);
 }
 
 .logo{
@@ -25,8 +28,8 @@
 }
 .desktopMenuListItem:hover{
   padding-bottom: 0.5rem;
-  color: var(--green);
-  border-bottom: 3px solid var(--green);
+  color: var(--highlight);
+  border-bottom: 3px solid var(--highlight);
 }
 
 
@@ -42,7 +45,7 @@
   cursor:pointer;
 }
 .desktopMenuBtn:hover{
-  background-color: var(--green);
+  background-color: var(--highlight);
 }
 
 .desktopMenuImg{
