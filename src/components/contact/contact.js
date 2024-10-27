@@ -9,19 +9,16 @@ const Contact = () => {
   return (
     <section  id="contact-page">
       <div className="resume">
-        <h1 className="contact-page-title">Resume</h1>
-        <p className="resume-text">Check out my cool credentials and work history!</p>
+        <h2 className="contact-page-title">Resume</h2>
+        <p className="resume-text"></p>
         <button className="resume-download-btn">
           <p>Download Resume</p>
           <img src={download} alt="download" className="download-img"/>
         </button>
       </div>
-      <div className="contact">
-        Contact form
-      </div>
       <div id="contact">
-        <h1 className="contact-heading">Contact Ya Boi</h1>
-        <span className="contact-descr">Please fill out the form below to discuss any work opportunities</span>
+        <h2 className="contact-heading">Get in Touch</h2>
+        <span className="contact-descr">Fill out the form below to discuss any work opportunities</span>
         <div className="contact-form">
           <input type="text" className="name" placeholder="Your Name"/>
           <input type="text" className="email" placeholder="Your Email"/>
