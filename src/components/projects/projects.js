@@ -1,7 +1,7 @@
 import React from 'react';
 import './projects.css';
-import Portfolio1 from  '../../assets/portfolio-1.png'
-import Portfolio2 from  '../../assets/portfolio-2.png'
+import ChickenTracker from  '../../assets/chicken-tracker-icon.png'
+import Portfolio2 from  '../../assets/platform.png'
 import Portfolio3 from  '../../assets/portfolio-3.png'
 import Portfolio4 from  '../../assets/portfolio-4.png'
 import Portfolio5 from  '../../assets/portfolio-5.png'
@@ -13,7 +13,7 @@ const Projects = () => {
       <h2 className="projects-title">Projects </h2>
       <span className="projects-descr">Check out my projects!</span>
       <div className="projects-imgs"> 
-        <img src={Portfolio1} alt="Portfolio1" className="projects-img"/>
+        <img src={ChickenTracker} alt="Portfolio1" className="projects-img"/>
         <img src={Portfolio2} alt="Portfolio2" className="projects-img"/>
         <img src={Portfolio3} alt="Portfolio3" className="projects-img"/>
         <img src={Portfolio4} alt="Portfolio4" className="projects-img"/>

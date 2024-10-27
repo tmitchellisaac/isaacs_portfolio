@@ -9,6 +9,7 @@
   text-align: center;
   padding:0 1rem;
   margin: 0 auto;
+  margin-top: 2rem;
 }
 
 .projects-title{
@@ -36,6 +37,7 @@
   object-fit: cover;
   height: 20rem;
   margin:0.5rem;
+  max-width:19rem;
 }
 
 .projects-btn{
