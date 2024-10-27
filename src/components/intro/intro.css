@@ -139,6 +139,7 @@
     height: 70vh;
   }
 }
+
 @media screen and (max-width: 505px) {
   #intro{
     height:100vh;
