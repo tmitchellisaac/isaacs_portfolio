@@ -1,0 +1,11 @@
+footer{
+  width: 100vw;
+  height: 3rem;
+  background-color: var(--light-background);
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: small;
+  text-align: center;
+  padding: 1rem;
+}
