@@ -9,7 +9,7 @@
   justify-content: space-between;
 }
 
-.introContent{
+.intro-content{
   height: 100vh;
   width: 100vh;
   padding: 2rem;
@@ -27,11 +27,11 @@
   font-weight: 100;
 }
 
-.introName{
+.intro-name{
   color: var(--highlight);
 }
 
-.introPara{
+.intro-para{
   font-size: medium;
   font-weight: 300;
   margin-top: 0.5rem;
@@ -54,7 +54,7 @@
   background-color: var(--highlight);
 }
 
-.btnImg{
+.btn-img{
   object-fit: cover;
   margin: 0 0.25rem;
   height: 1rem;
@@ -71,7 +71,7 @@
 
 
 @media screen and (max-width: 1200px) {
-  .introContent{
+  .intro-content{
     max-width:35rem;
   }
   .bg {
@@ -80,7 +80,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .introContent{
+  .intro-content{
     max-width:35rem;
   }
   .bg {
@@ -89,10 +89,10 @@
 }
 
 @media screen and (max-width: 850px) {
-  .introContent{
+  .intro-content{
     max-width: 445px;
   }
-  .introName{
+  .intro-name{
     text-align: end;
   }
   .bg {
@@ -107,23 +107,23 @@
     align-items: center;
     text-align: center;
   }
-  .introContent{
+  .intro-content{
     flex: 0 1 auto;
     max-width: 55rem;
   }
   .hello{
     margin-bottom: 1rem;
   }
-  .introText{
+  .intro-text{
     font-size:50px;
     flex: 0 1 auto;
   }
-  .introPara {
+  .intro-para {
     text-align: center;
     width:20rem;
     align-self:center;
   }
-  .introName{
+  .intro-name{
     font-size:105%;
   }
   .btn{
@@ -144,13 +144,13 @@
   #intro{
     height:100vh;
   }
-  .introContent{
+  .intro-content{
     margin-top:-1rem;
   }
   .hello {
     font-size:large;
   }
-  .introText{
+  .intro-text{
     font-size:30px;
   }
   .bg{
