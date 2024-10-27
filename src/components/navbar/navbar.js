@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 //css
 import './navbar.css';
 //images
-import logo from '../../assets/isaac-mitchell-high-resolution-logo-transparent.png'
+import logo1 from '../../assets/isaac-logo-one.png'
+
 import contactImg from '../../assets/contact.png'
-import menu from '../../assets/burger-menu.png'
+import menu from '../../assets/blue-burger-copy.png'
 //packages
 import { Link } from 'react-scroll'
 
@@ -12,12 +13,12 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <nav className='navbar'>
-      <img src={logo} alt="Logo" className='logo'/>
+      <img src={logo1} alt="Logo" className='logo'/>
       <div className='desktopMenu'>
         <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Home</Link>
         <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>Skills</Link>
         <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-75} duration={500} className='desktopMenuListItem'>Projects</Link>
-        <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-250} duration={500} className='desktopMenuListItem'>Resume</Link>
+        <Link activeClass="active" to="contact-page" spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Resume</Link>
       </div>
       <button className='desktopMenuBtn' onClick={() => {
         document.getElementById('contact').scrollIntoView({behavior: 'smooth'})
@@ -31,8 +32,8 @@ const Navbar = () => {
         <Link to="intro" spy={true} smooth={true} offset={-100} duration={500} onClick={() => setShowMenu(false)} className='ham-list-menu'>Home</Link>
         <Link to="skills" spy={true} smooth={true} offset={-50} duration={500} onClick={() => setShowMenu(false)} className='ham-list-menu'>Skills</Link>
         <Link to="projects" spy={true} smooth={true} offset={-75} duration={500} onClick={() => setShowMenu(false)} className='ham-list-menu'>Projects</Link>
-        <Link to="contact" spy={true} smooth={true} offset={-250} duration={500} onClick={() => setShowMenu(false)} className='ham-list-menu'>Resume</Link>
-        <Link to="contact" spy={true} smooth={true} offset={-250} duration={500} onClick={() => setShowMenu(false)} className='ham-list-menu'>Contact</Link>
+        <Link to="contact-page" spy={true} smooth={true} offset={-100} duration={500} onClick={() => setShowMenu(false)} className='ham-list-menu'>Resume</Link>
+        <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} onClick={() => setShowMenu(false)} className='ham-list-menu'>Contact</Link>
       </div>
     </nav>
   ); 
