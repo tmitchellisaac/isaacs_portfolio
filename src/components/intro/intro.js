@@ -1,7 +1,6 @@
 import React from 'react';
 import './intro.css';
 import bg from  '../../assets/profile-3.png'
-import { Link } from 'react-scroll'
 import btnImg from '../../assets/hireme.png'
 
 const Intro = () => {
