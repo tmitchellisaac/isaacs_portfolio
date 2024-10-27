@@ -7,7 +7,7 @@ import Testing from '../../assets/software-testing.png'
 const Skills = () => {
   return (
     <section  id="skills">
-      <span className="skill-title">What I Do</span>
+      <h2 className="skill-title">What I Do</h2>
       <span className="skill-descr">Experienced software engineer with 8+ years in quality assurance and a foundation in biology and chemistry. Skilled in Angular, TypeScript, Ruby on Rails, SQL, REST APIs, and Playwright, with a focus on clean, scalable code and best practices. Strong communicator, adept at explaining technical concepts and collaborating across teams to deliver business solutions. Proficient in building responsive, user-friendly front-end interfaces.</span>
       <span className="skill-bars">
         <div className="skill-bar">
