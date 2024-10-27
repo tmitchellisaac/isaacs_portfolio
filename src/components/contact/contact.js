@@ -1,11 +1,42 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './contact.css';
 import download from '../../assets/download.png'
 // import guitarIcon from '../../assets/guitar.png'
 import liIcon from '../../assets/linkedin-icon.png'
 import ghIcon from '../../assets/github-icon.png'
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+  e.preventDefault();
+  emailjs.sendForm('service_yrcwdeg', 'template_h91r6f8', form.current, 'MMxx7xHWkA7-NSnKT')
+    .then(
+      () => {
+        console.log('SUCCESS!');
+      Swal.fire({
+        title: "Hey Thanks!",
+        text: "fer getting in touch",
+        icon: "success",
+        iconColor: "forest-green",
+        color: "white",
+        confirmButtonColor: "#eb9898",
+        background: "#282828",
+        timer: 4000,
+      });
+        e.target.reset();
+      },
+      (error) => {
+        Swal.fire({
+          title: "Whoops!",
+          text: "something went wrong, please try again",
+          icon: "error",
+        });
+      },
+    );
+  };
+
   return (
     <section  id="contact-page">
       <div className="resume">
@@ -19,19 +50,25 @@ const Contact = () => {
       <div id="contact">
         <h2 className="contact-heading">Get in Touch</h2>
         <span className="contact-descr">Fill out the form below to discuss any work opportunities</span>
-        <div className="contact-form">
-          <input type="text" className="name" placeholder="Your Name"/>
-          <input type="text" className="email" placeholder="Your Email"/>
-          <textarea type="text" className="message" placeholder="Your Message"/>
+        <form className="contact-form" ref={form} onSubmit={sendEmail} >
+          <input type="text" className="name" placeholder="Your Name" name="name"/>
+          <input type="text" className="email" placeholder="Your Email" name="email"/>
+          <textarea type="text" className="message" placeholder="Your Message" name="message"/>
           <button type="submit" className="submit-btn" value='Send' >Submit</button>
           <div className="links">
-            <img src={ghIcon} alt="github-icon" className="link-img"/>
-            <img src={liIcon} alt="linkedin-icon" className="link-img"/>
+            <a href="https://www.github.com/tmitchellisaac" target="_blank" rel="noopener noreferrer"> 
+              <img src={ghIcon} alt="github-icon" className="link-img"/>
+            </a>
+            <a href="https://www.linkedin.com/in/tmitchellisaac/" target="_blank" rel="noopener noreferrer"> 
+              <img src={liIcon} alt="linkedin-icon" className="link-img"/>
+            </a>
           </div>
-        </div>
+        </form>
       </div>
     </section>
   );
 }
 
 export default Contact;
+
+
