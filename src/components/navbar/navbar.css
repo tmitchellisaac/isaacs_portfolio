@@ -11,7 +11,7 @@
   top: 0;
   z-index: 3;
   flex: 0 1 auto;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: var(--background);
 }
 
@@ -43,6 +43,7 @@
   padding: 0 1rem;
   border-radius: 2rem;
   cursor:pointer;
+  white-space:nowrap;
 }
 .desktopMenuBtn:hover{
   background-color: var(--highlight);
@@ -55,3 +56,77 @@
   margin: 1rem;
 }
 
+.active{
+  color: var(--highlight);
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--highlight)
+}
+
+
+.desktopMenu{
+  width:100%;
+  display: flex;
+  align-items: top;
+  justify-content: space-evenly;
+  margin:2rem;
+}
+
+.ham-menu{
+  height:75px;
+  color: white;
+}
+
+.nav-menu{
+  margin-top: 0.5rem;
+  display: flex;
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  z-index: 2;
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: column;
+  height: fit-content;
+  min-width: 15rem;
+  background-color: var(--light-background);
+  border-radius: 1rem; 
+  /* overflow:auto; */
+}
+
+.desktopMenuListItem{
+  color: white;
+  /* padding: 0.5rem auto; */
+  /* margin: 0.25rem; */
+  background: var(--background)
+
+}
+
+.ham-menu{
+  display: none;
+  object-fit: cover;
+  height: 5rem;
+}
+
+.ham-list-menu {
+  color:white;
+  padding: 0.5rem 3rem;
+  margin: 0.25rem;
+  background-color: var(--background);
+}
+.ham-list-menu:hover{
+  padding-bottom: 0.5rem;
+  color: var(--highlight);
+  border-bottom: 3px solid var(--highlight);
+}
+
+@media screen and (max-width:700px) {
+  .ham-menu{
+    display: flex;
+  }
+  .desktopMenu{
+    display: none;
+  }
+  .desktopMenuBtn{
+    display: none;
+  }
+}
