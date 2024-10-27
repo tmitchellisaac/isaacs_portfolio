@@ -9,15 +9,6 @@
   justify-content: space-between;
 }
 
-.bg{
-  z-index: -1;
-  position: absolute;
-  top: -4rem;
-  right: 0;
-  object-fit: cover;
-  height: 100vh;
-}
-
 .introContent{
   height: 100vh;
   width: 100vh;
@@ -69,66 +60,59 @@
   height: 1rem;
 }
 
-.extra{
-  font-style: italic;
-  font-style: oblique;
+.bg{
+  z-index: -1;
+  position: absolute;
+  top: -4rem;
+  right: 0;
+  object-fit: cover;
+  height: 100vh;
 }
 
-/* @media screen and (min-width:1400px){
-  .bg{
-  }
-} */
+
 @media screen and (max-width: 1200px) {
+  .introContent{
+    max-width:35rem;
+  }
   .bg {
     right: -10vw
   }
+}
+
+@media screen and (max-width: 1000px) {
   .introContent{
     max-width:35rem;
   }
-}
-@media screen and (max-width: 1000px) {
   .bg {
     right: -20vw
   }
-  .introContent{
-    max-width:35rem;
-  }
 }
+
 @media screen and (max-width: 850px) {
-  .bg {
-    right: -30vw
-  }
   .introContent{
-    /* align-self: flex-start; */
-    justify-content: text-end;
     max-width: 445px;
-    
   }
   .introName{
     text-align: end;
   }
+  .bg {
+    right: -30vw
+  }
 }
+
 @media screen and (max-width: 670px) {
   #intro{
     height:120vh;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     text-align: center;
-    /* position:static; */
-  }
-  .bg {
-    margin-left:1rem;
-    flex: 0 2 auto;
-    z-index: -1;
-    position: relative;
-    top: -4rem;
-    right: 0;
-    height: 70vh;
   }
   .introContent{
     flex: 0 1 auto;
     max-width: 55rem;
+  }
+  .hello{
+    margin-bottom: 1rem;
   }
   .introText{
     font-size:50px;
@@ -139,37 +123,36 @@
     width:20rem;
     align-self:center;
   }
-  .hello{
-    margin-bottom: 1rem;
+  .introName{
+    font-size:105%;
   }
   .btn{
     display:none;
   }
-}
-@media screen and (max-width: 505px) {
-  #intro{
-    height:100vh;
-    margin-top: rem;
-  }
-  .bg{
+  .bg {
     margin-left:1rem;
     flex: 0 2 auto;
     z-index: -1;
     position: relative;
     top: -4rem;
     right: 0;
-    height: 50vh;
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 505px) {
+  #intro{
+    height:100vh;
   }
   .introContent{
     margin-top:-1rem;
-    flex: 0 1 auto;
-    max-width: 55rem;
-  }
-  .introText{
-    font-size:30px;
-    flex: 0 1 auto;
   }
   .hello {
     font-size:large;
+  }
+  .introText{
+    font-size:30px;
+  }
+  .bg{
+    height: 50vh;
   }
 }
