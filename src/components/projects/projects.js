@@ -20,9 +20,9 @@ const Projects = () => {
         <img src={Portfolio5} alt="Portfolio5" className="projects-img"/>
         <img src={Portfolio6} alt="Portfolio6" className="projects-img"/>
       </div>
-      <button className="projects-btn">
-        See More
-      </button>
+      <a href="https://www.github.com/tmitchellisaac" target="_blank" rel="noopener noreferrer" className="projects-btn"> 
+        See More on GitHub
+      </a>
     </section>
   );
 }
