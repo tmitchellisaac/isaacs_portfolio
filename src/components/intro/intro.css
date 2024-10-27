@@ -1,10 +1,12 @@
 #intro{
   height: calc(100vh - 4rem);
   width: 100vw;
-  max-width: 75rem;
+  max-width: 90rem;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
+  display:flex;
+  justify-content: space-between;
 }
 
 .bg{
@@ -14,7 +16,6 @@
   right: 0;
   object-fit: cover;
   height: 100vh;
-  /* flex: 0 1 auto; */
 }
 
 .introContent{
@@ -27,6 +28,7 @@
   flex-direction:column;
   justify-content:center;
   width:100%;
+  max-width:40rem;
 }
 
 .hello {
@@ -55,6 +57,10 @@
   margin: 1rem 0;
   padding: 0.75rem 2rem;
   border: none;
+  width: 10rem;
+}
+.btn:hover{
+  background-color: var(--highlight);
 }
 
 .btnImg{
@@ -68,24 +74,102 @@
   font-style: oblique;
 }
 
-@media screen and (max-width: 1000px) {
+/* @media screen and (min-width:1400px){
+  .bg{
+  }
+} */
+@media screen and (max-width: 1200px) {
   .bg {
     right: -10vw
+  }
+  .introContent{
+    max-width:35rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .bg {
+    right: -20vw
+  }
+  .introContent{
+    max-width:35rem;
   }
 }
 @media screen and (max-width: 850px) {
   .bg {
-    right: -15vw
+    right: -30vw
   }
   .introContent{
-    align-self: flex-start;
-    max-width: 500px;
+    /* align-self: flex-start; */
+    justify-content: text-end;
+    max-width: 445px;
+    
   }
   .introName{
     text-align: end;
   }
 }
-
-.top {
-  display:flex;
+@media screen and (max-width: 670px) {
+  #intro{
+    height:120vh;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    /* position:static; */
+  }
+  .bg {
+    margin-left:1rem;
+    flex: 0 2 auto;
+    z-index: -1;
+    position: relative;
+    top: -4rem;
+    right: 0;
+    height: 70vh;
+  }
+  .introContent{
+    flex: 0 1 auto;
+    max-width: 55rem;
+  }
+  .introText{
+    font-size:50px;
+    flex: 0 1 auto;
+  }
+  .introPara {
+    text-align: center;
+    width:20rem;
+    align-self:center;
+  }
+  .hello{
+    margin-bottom: 1rem;
+  }
+  .btn{
+    display:none;
+  }
+}
+@media screen and (max-width: 505px) {
+  #intro{
+    height:100vh;
+    margin-top: rem;
+  }
+  .bg{
+    margin-left:1rem;
+    flex: 0 2 auto;
+    z-index: -1;
+    position: relative;
+    top: -4rem;
+    right: 0;
+    height: 50vh;
+  }
+  .introContent{
+    margin-top:-1rem;
+    flex: 0 1 auto;
+    max-width: 55rem;
+  }
+  .introText{
+    font-size:30px;
+    flex: 0 1 auto;
+  }
+  .hello {
+    font-size:large;
+  }
 }
