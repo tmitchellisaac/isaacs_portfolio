@@ -1,12 +1,11 @@
 import React, { useRef } from 'react';
 import './contact.css';
 import download from '../../assets/download.png'
-// import guitarIcon from '../../assets/guitar.png'
 import liIcon from '../../assets/linkedin-icon.png'
 import ghIcon from '../../assets/github-icon.png'
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
-import resume from '../../assets/resume.docx.pdf'
+import resume from '../../assets/resume-icon.png'
 
 const Contact = () => {
   const form = useRef();
@@ -43,21 +42,13 @@ const Contact = () => {
       <div className="resume">
         <h2 className="contact-page-title">Resume</h2>
         <p className="resume-text"></p>
-
+        <img src={resume} alt="resume-icon" className="resume-img"></img>
         <a href={resume} download="resume.docx.pdf" class="resume-download-btn">
-          <p>Download Resume</p>
+          <p>Download</p>
           <img src={download} alt="download" className="download-img"/>
         </a>
-
-{/* 
-        <button className="resume-download-btn">
-          <p>Download Resume</p>
-          <img src={download} alt="download" className="download-img"/>
-        </button> */}
-
-
-
       </div>
+
       <div id="contact">
         <h2 className="contact-heading">Get in Touch</h2>
         <span className="contact-descr"></span>
@@ -81,5 +72,3 @@ const Contact = () => {
 }
 
 export default Contact;
-
-

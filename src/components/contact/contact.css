@@ -7,6 +7,15 @@
   margin:0;
 }
 
+.resume-img{
+  width:10rem;
+  transition: transform 0.3s ease;
+}
+.resume-img:hover{
+  object-fit: cover;
+  transform: scale(1.1);
+}
+
 .resume-download-btn {
   margin: 3rem 0;
   padding: 0.5rem 2.5rem;
@@ -16,9 +25,9 @@
   font-size: 1rem;
   display: flex;
   align-items: center;
-  justify-content: center; /* Centers content horizontally */
-  gap: 0.5rem; /* Adds spacing between elements */
-  border: none; /* Optional: remove border */
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
   gap: 1rem;
 }
 
@@ -27,7 +36,7 @@
 }
 
 .resume-download-btn > p {
-  margin: 0; /* Remove default margin */
+  margin: 0;
 }
 
 /*Contact*/
@@ -42,7 +51,6 @@
 .contact-page-title{
   margin: 1rem 0;
   font-size: 3rem;
-  font-style: italic;
 }
 .contact-heading{
   margin: 1rem 0;
@@ -84,6 +92,9 @@
   padding: 0.75rem 3.5rem;
   border-radius: 0.5rem;
   margin: 1rem;
+}
+.submit-btn:hover{
+  background-color: var(--highlight);
 }
 
 .download-img {
