@@ -6,6 +6,7 @@ import liIcon from '../../assets/linkedin-icon.png'
 import ghIcon from '../../assets/github-icon.png'
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
+import resume from '../../assets/resume.docx.pdf'
 
 const Contact = () => {
   const form = useRef();
@@ -42,14 +43,24 @@ const Contact = () => {
       <div className="resume">
         <h2 className="contact-page-title">Resume</h2>
         <p className="resume-text"></p>
+
+        <a href={resume} download="resume.docx.pdf" class="resume-download-btn">
+          <p>Download Resume</p>
+          <img src={download} alt="download" className="download-img"/>
+        </a>
+
+{/* 
         <button className="resume-download-btn">
           <p>Download Resume</p>
           <img src={download} alt="download" className="download-img"/>
-        </button>
+        </button> */}
+
+
+
       </div>
       <div id="contact">
         <h2 className="contact-heading">Get in Touch</h2>
-        <span className="contact-descr">Fill out the form below to discuss any work opportunities</span>
+        <span className="contact-descr"></span>
         <form className="contact-form" ref={form} onSubmit={sendEmail} >
           <input type="text" className="name" placeholder="Your Name" name="name"/>
           <input type="text" className="email" placeholder="Your Email" name="email"/>
