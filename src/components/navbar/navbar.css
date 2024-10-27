@@ -22,19 +22,19 @@
   border-radius: 1rem;
 }
 
-.desktopMenuListItem{
+.desktop-menu-list-item{
   margin: 1rem;
   cursor: pointer;
   border-bottom: 10px white;
 }
-.desktopMenuListItem:hover{
+.desktop-menu-list-item:hover{
   padding-bottom: 0.5rem;
   color: var(--highlight);
   border-bottom: 3px solid var(--highlight);
 }
 
 
-.desktopMenuBtn{
+.desktop-menu-btn{
   border: none;
   background:white;
   color:var(--background);
@@ -46,11 +46,11 @@
   cursor:pointer;
   white-space:nowrap;
 }
-.desktopMenuBtn:hover{
+.desktop-menu-btn:hover{
   background-color: var(--highlight);
 }
 
-.desktopMenuImg{
+.desktop-menu-img{
   object-fit: cover;
   height: 1rem;
   width: 1rem;
@@ -64,7 +64,7 @@
 }
 
 
-.desktopMenu{
+.desktop-menu{
   width:100%;
   display: flex;
   align-items: top;
@@ -94,7 +94,7 @@
   /* overflow:auto; */
 }
 
-.desktopMenuListItem{
+.desktop-menu-list-item{
   color: white;
   /* padding: 0.5rem auto; */
   /* margin: 0.25rem; */
@@ -124,10 +124,10 @@
   .ham-menu{
     display: flex;
   }
-  .desktopMenu{
+  .desktop-menu{
     display: none;
   }
-  .desktopMenuBtn{
+  .desktop-menu-btn{
     display: none;
   }
 }
