@@ -5,7 +5,8 @@ import liIcon from '../../assets/linkedin-icon.png'
 import ghIcon from '../../assets/github-icon.png'
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
-import resume from '../../assets/resume-icon.png'
+import resumeIcon from '../../assets/resume-icon.png'
+import resume from '../../assets/resume.docx.pdf'
 
 const Contact = () => {
   const form = useRef();
@@ -42,7 +43,7 @@ const Contact = () => {
       <div className="resume">
         <h2 className="contact-page-title">Resume</h2>
         <p className="resume-text"></p>
-        <img src={resume} alt="resume-icon" className="resume-img"></img>
+        <img src={resumeIcon} alt="resume-icon" className="resume-img"></img>
         <a href={resume} download="resume.docx.pdf" class="resume-download-btn">
           <p>Download</p>
           <img src={download} alt="download" className="download-img"/>
