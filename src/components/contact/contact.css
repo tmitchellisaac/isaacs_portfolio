@@ -93,7 +93,7 @@
   margin: 1rem;
 }
 .submit-btn:hover{
-  background-color: var(--highlight);
+  /* background-color: var(--highlight); */
 }
 
 .download-img {
